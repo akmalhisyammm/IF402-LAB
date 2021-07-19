@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TextField fx:id="txtKeyword" layoutX="11.0" layoutY="10.0" onAction="#handleSearch" promptText="Keyword..." />
+      <Button layoutX="206.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleSearch" text="Search" textAlignment="CENTER" />
+      <Button layoutX="397.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBtnDelete" text="Delete" textAlignment="CENTER" />
+      <Button layoutX="467.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBtnEntry" text="Entry New Data" />
+      <TableView fx:id="tableItem" layoutX="11.0" layoutY="52.0" prefHeight="496.0" prefWidth="579.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="42.0" text="ID" />
+          <TableColumn fx:id="colProductName" prefWidth="215.0" text="Product Name" />
+            <TableColumn fx:id="colPrice" prefWidth="85.0" text="Price" />
+            <TableColumn fx:id="colCategory" prefWidth="153.0" text="Category" />
+            <TableColumn fx:id="colStock" minWidth="7.0" prefWidth="83.0" text="Stock" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
